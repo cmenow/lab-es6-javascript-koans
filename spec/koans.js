@@ -25,7 +25,7 @@ var varX = true;
     
     it('`var` does not restricts scope to inside the block in `for` loops', () => {
       var counter = 100;
-      for (let counter = 1; counter < 50; counter++){}
+      for (var counter = 1; counter < 50; counter++){}
 
       expect(counter).toBe(50);
     });
